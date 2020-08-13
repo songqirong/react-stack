@@ -1,0 +1,51 @@
+$color:green;
+$size:50px;
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#app{
+    height: 100%;
+    h4{
+        text-align: center;
+        font-size: 50px;
+        color: blue;
+    }
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .app-wrap{
+        border: 1px solid orange;
+        padding: 20px;
+        background-color: #ccc;
+        h2{
+            color: $color;
+            font-size: $size;
+            text-align: center;
+        }
+    }    
+}
+.green{
+    color:green;
+}
+.red{
+    color: red;
+}
+.child1{
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    &>span{
+        flex:1;
+        border: 1px solid #ccc;
+        line-height: 40px;
+        cursor: pointer;
+    }
+    &>span.on{
+        background-color: orange;
+        color: white;
+    }
+}
