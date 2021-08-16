@@ -1,8 +1,8 @@
 import React from 'react';
 import {Button} from 'antd';
 import {inject,observer} from 'mobx-react';
-@inject('store')
-@observer
+// @inject('store')
+// @observer
 class Status extends React.Component{
     constructor(props){
         super(props);
@@ -65,10 +65,10 @@ class Status extends React.Component{
     }
     render(){
         // console.log(this.props);
-        let {testStore} = this.props.store;
+        // let {testStore} = this.props.store;
         return(
             <div>
-                <span>{testStore.count}</span><br/>
+                {/* <span>{testStore.count}</span><br/> */}
                 <Button type="primary" onClick={this.countChange.bind(this,"add")}>加</Button>
                 <Button type="primary" danger onClick={this.countChange.bind(this)}>减</Button>
                 <hr/>

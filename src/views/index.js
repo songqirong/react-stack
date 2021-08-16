@@ -1,20 +1,21 @@
 import loadable from '@loadable/component';
 import React from 'react';
+import asyncRouter, { RouterHooks } from '@/utils/asyncRouter.js'; 
 // import { Icon } from 'antd';
 import { SmileOutlined,DownOutlined,FastBackwardOutlined,FastForwardOutlined} from '@ant-design/icons';
-const Nav1 = loadable(()=>import('@/views/study/nav1'));
-const Nav2 = loadable(()=>import('@/views/study/nav2'));
-const Nav3 = loadable(()=>import('@/views/study/nav3'));
-const Nav4 = loadable(()=>import('@/views/study/nav4'));
-const Nav5 = loadable(()=>import('@/views/study/nav5'));
-const Nav6 = loadable(()=>import('@/views/study/nav6'));
-const Nav7 = loadable(()=>import('@/views/study/nav7'));
-const Nav8 = loadable(()=>import('@/views/study/nav8'));
-const Nav9 = loadable(()=>import('@/views/study/nav9'));
-const Hook = loadable(()=>import('@/views/study/hook'));
-const Status = loadable(()=>import('@/views/study/status'));
-const Good = loadable(()=>import('@/views/good/goodList'));
-const Detail = loadable(()=>import('@/views/good/goodDetail'));
+const Nav1 = asyncRouter(()=>import('@/views/study/nav1'));
+const Nav2 = asyncRouter(()=>import('@/views/study/nav2'));
+const Nav3 = asyncRouter(()=>import('@/views/study/nav3'));
+const Nav4 = asyncRouter(()=>import('@/views/study/nav4'));
+const Nav5 = asyncRouter(()=>import('@/views/study/nav5'));
+const Nav6 = asyncRouter(()=>import('@/views/study/nav6'));
+const Nav7 = asyncRouter(()=>import('@/views/study/nav7'));
+const Nav8 = asyncRouter(()=>import('@/views/study/nav8'));
+const Nav9 = asyncRouter(()=>import('@/views/study/nav9'));
+const Hook = asyncRouter(()=>import('@/views/study/hook'));
+const Status = asyncRouter(()=>import('@/views/study/status'));
+const Good = asyncRouter(()=>import('@/views/good/goodList'));
+const Detail = asyncRouter(()=>import('@/views/good/goodDetail'));
 
 const routes = [
     {
