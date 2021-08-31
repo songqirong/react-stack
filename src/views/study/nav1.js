@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import {inject,observer} from 'mobx-react';
 import { createAction } from 'redux-actions';
 import { count_add } from '@/store/reduces/home/reducer.js';
+import { any } from 'prop-types';
 // @inject('store')
 // @observer
 class Nav1 extends React.Component{
@@ -14,6 +15,7 @@ class Nav1 extends React.Component{
         });
         console.log(list);
         console.log(arr2);
+        console.log(this.context, 'props');
         // this.permutate('123');
         
         // window.addEventListener("click", this.listenTop, false);
@@ -57,6 +59,7 @@ class Nav1 extends React.Component{
                     <h2>若非群玉山头见，会向瑶台月下逢。</h2>
                 </div>
                 {/* <span>{this.props.store.testStore.count}</span> */}
+                
             </div>
         );
     }

@@ -16,6 +16,7 @@ const Hook = asyncRouter(()=>import('@/views/study/hook'));
 const Status = asyncRouter(()=>import('@/views/study/status'));
 const Good = asyncRouter(()=>import('@/views/good/goodList'));
 const Detail = asyncRouter(()=>import('@/views/good/goodDetail'));
+const MyRedux = asyncRouter(()=>import('@/views/study/myRedux'));
 
 const routes = [
     {
@@ -111,6 +112,13 @@ const routes = [
         path:'/status',
         component: Status,
         name:"状态管理"
+    },
+    {
+        id:13,
+        icon:<FastForwardOutlined />,
+        path:'/my-redux',
+        component: MyRedux,
+        name:"学习redux"
     },
 ];
 
